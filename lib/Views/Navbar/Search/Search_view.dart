@@ -11,7 +11,7 @@ class _SearchViewState extends State<SearchView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Text('search'),
+      body: Center(child: Text('search')),
     );
   }
 }

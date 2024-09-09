@@ -11,7 +11,7 @@ class _ReelsViewState extends State<ReelsView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Text('Reel'),
+      body: Center(child: Text('Reel')),
     );
   }
 }

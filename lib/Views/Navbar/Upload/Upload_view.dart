@@ -11,7 +11,7 @@ class _UploadViewState extends State<UploadView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Text('upload'),
+      body: Center(child: Text('upload')),
     );
   }
 }

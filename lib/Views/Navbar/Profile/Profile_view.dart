@@ -11,7 +11,7 @@ class _ProfileViewState extends State<ProfileView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Text('profile'),
+      body: Center(child: Text('profile')),
     );
   }
 }

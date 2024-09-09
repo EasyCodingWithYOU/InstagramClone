@@ -7,8 +7,8 @@ import 'package:insta_clone/Views/Navbar/Reels/Reels_view.dart';
 import 'package:insta_clone/Views/Navbar/Search/Search_view.dart';
 import 'package:insta_clone/Views/Navbar/Upload/Upload_view.dart';
 
-class Ongenererateroute {
-  Route<dynamic> GenerateRoute(RouteSettings settings) {
+class OnGenererateRoute {
+  static Route<dynamic> GenerateRoute(RouteSettings settings) {
     switch (settings.name) {
       case initialRoute:
         return MaterialPageRoute(builder: (_) => NavebarView());
