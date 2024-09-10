@@ -10,3 +10,4 @@ const selectPlaySvg = 'Assets/Svg/selectplay.svg';
 const shareSvg = 'Assets/Svg/share.svg';
 const uploadSvg = 'Assets/Svg/upload.svg';
 const bellSvg = 'Assets/Svg/bell.svg';
+const tableSvg = 'Assets/Svg/table.svg';

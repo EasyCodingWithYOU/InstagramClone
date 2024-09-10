@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:insta_clone/Utils/Colors/Colors.dart';
 import 'package:insta_clone/Utils/Png_Names/Png_Names.dart';
 import 'package:insta_clone/Utils/Widgets/Home_Comment.dart';
 import 'package:insta_clone/Utils/Widgets/Home_Screen_Reel.dart';
+import 'package:insta_clone/Utils/Widgets/Profile_stack.dart';
 import 'package:insta_clone/Utils/Widgets/Stories.dart';
 import 'package:insta_clone/Views/Navbar/Navebar_view.dart';
 
@@ -74,7 +76,35 @@ class _HomeViewState extends State<HomeView> {
                     //   color: Colors.green,
                     // child: stories(),
                     // ),
-                    Flexible(child: stories())
+                    // ==========stroeis
+
+                    SizedBox(
+                      height: 400.h,
+                      child: SingleChildScrollView(
+                        scrollDirection: Axis.horizontal,
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Padding(
+                              padding: EdgeInsets.only(top: 12.h),
+                              child: Column(
+                                children: [
+                                  Profilestack(url: profilePng),
+                                  SizedBox(
+                                    height: 10.h,
+                                  ),
+                                  Text(
+                                    'User name',
+                                    style: TextStyle(color: iconColorWhite),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            stories(),
+                          ],
+                        ),
+                      ),
+                    )
                   ],
                 ),
               ),

@@ -7,6 +7,7 @@ Widget stories() {
   return ListView.builder(
     shrinkWrap: true,
     itemCount: 20,
+    physics: NeverScrollableScrollPhysics(),
     scrollDirection: Axis.horizontal,
     itemBuilder: (context, index) {
       return Column(

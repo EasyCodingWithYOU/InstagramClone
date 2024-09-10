@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:insta_clone/Routes/OnGenererateRoute.dart';
 import 'package:insta_clone/Routes/RoutesName.dart';
 
 void main() {
   runApp(InstaApp());
+  SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
 }
 
 class InstaApp extends StatefulWidget {
