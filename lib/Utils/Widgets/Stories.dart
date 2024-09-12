@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:insta_clone/Utils/List_of_Images/List_of_Images.dart';
 import 'package:insta_clone/Utils/Png_Names/Png_Names.dart';
 import 'package:insta_clone/Utils/Widgets/Gradient_Container.dart';
 
@@ -18,7 +19,8 @@ Widget stories() {
               SizedBox(
                 width: 40.w,
               ),
-              gradientContainer(img: profilePng, radius: 150),
+              gradientContainer(
+                  img: listImages[index % listImages.length], radius: 145),
             ],
           ),
           Text(

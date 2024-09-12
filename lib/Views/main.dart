@@ -5,8 +5,12 @@ import 'package:insta_clone/Routes/OnGenererateRoute.dart';
 import 'package:insta_clone/Routes/RoutesName.dart';
 
 void main() {
+  SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+      statusBarColor: Colors.black, // Change this to your desired color
+      statusBarIconBrightness: Brightness.dark,
+      systemNavigationBarIconBrightness: Brightness.dark // or Brightness.dark
+      ));
   runApp(InstaApp());
-  SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
 }
 
 class InstaApp extends StatefulWidget {

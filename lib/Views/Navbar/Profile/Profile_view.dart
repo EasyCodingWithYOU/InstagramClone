@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:insta_clone/Utils/Colors/Colors.dart';
+import 'package:insta_clone/Utils/List_of_Images/List_of_Images.dart';
 import 'package:insta_clone/Utils/Png_Names/Png_Names.dart';
 import 'package:insta_clone/Utils/Widgets/Profile_stack.dart';
 import 'package:insta_clone/Views/Navbar/Navebar_view.dart';
@@ -275,6 +276,7 @@ class _ProfileViewState extends State<ProfileView> {
               ),
             ),
           ),
+          // ============pics or bottom area=========
           SliverToBoxAdapter(
               child: ListView.builder(
             shrinkWrap: true,
@@ -288,7 +290,7 @@ class _ProfileViewState extends State<ProfileView> {
                     height: screenHeightOneThirdHalf,
                     width: screenWidthHalf / 1.55,
                     child: Image.asset(
-                      profilePng,
+                      listImages[index % listImages.length],
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -297,17 +299,17 @@ class _ProfileViewState extends State<ProfileView> {
                     height: screenHeightOneThirdHalf,
                     width: screenWidthHalf / 1.55,
                     child: Image.asset(
-                      profilePng,
+                      listImages[(index + 1) % listImages.length],
                       fit: BoxFit.cover,
                     ),
                   ),
-                  Flexible(
+                  Expanded(
                     child: Container(
                       color: Colors.blue,
                       height: screenHeightOneThirdHalf,
                       // width: screenWidthHalf / 1.55,
                       child: Image.asset(
-                        profilePng,
+                        listImages[(index + 2) % listImages.length],
                         fit: BoxFit.cover,
                       ),
                     ),

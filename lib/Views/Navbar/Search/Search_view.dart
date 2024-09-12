@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:insta_clone/Utils/List_of_Images/List_of_Images.dart';
 import 'package:insta_clone/Utils/Png_Names/Png_Names.dart';
 
 class SearchView extends StatefulWidget {
@@ -20,6 +21,7 @@ class _SearchViewState extends State<SearchView> {
     double screenHeightOneThirdHalf = screenHeightOneThird / 2;
 
     return Scaffold(
+      backgroundColor: Colors.black,
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
@@ -59,7 +61,7 @@ class _SearchViewState extends State<SearchView> {
                                   width: screenWidthHalfbyhalf,
                                   color: Colors.amber,
                                   child: Image.asset(
-                                    profilePng,
+                                    listImages[index % listImages.length],
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -68,7 +70,7 @@ class _SearchViewState extends State<SearchView> {
                                   width: screenWidthHalfbyhalf,
                                   color: Colors.blue,
                                   child: Image.asset(
-                                    profilePng,
+                                    listImages[1],
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -81,7 +83,7 @@ class _SearchViewState extends State<SearchView> {
                                   width: screenWidthHalfbyhalf,
                                   color: Colors.blue,
                                   child: Image.asset(
-                                    profilePng,
+                                    listImages[3],
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -90,7 +92,7 @@ class _SearchViewState extends State<SearchView> {
                                   width: screenWidthHalfbyhalf,
                                   color: Colors.amber,
                                   child: Image.asset(
-                                    profilePng,
+                                    listImages[4],
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -103,7 +105,7 @@ class _SearchViewState extends State<SearchView> {
                           width: screenWidthHalf,
                           color: Colors.green[200],
                           child: Image.asset(
-                            profilePng,
+                            listImages[0],
                             fit: BoxFit.cover,
                           ),
                         ),
@@ -117,7 +119,7 @@ class _SearchViewState extends State<SearchView> {
                           width: screenWidthHalf,
                           color: Colors.green[200],
                           child: Image.asset(
-                            profilePng,
+                            listImages[2],
                             fit: BoxFit.cover,
                           ),
                         ),
@@ -130,7 +132,7 @@ class _SearchViewState extends State<SearchView> {
                                   width: screenWidthHalfbyhalf,
                                   color: Colors.amber,
                                   child: Image.asset(
-                                    profilePng,
+                                    listImages[3],
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -139,7 +141,7 @@ class _SearchViewState extends State<SearchView> {
                                   width: screenWidthHalfbyhalf,
                                   color: Colors.blue,
                                   child: Image.asset(
-                                    profilePng,
+                                    listImages[1],
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -152,7 +154,7 @@ class _SearchViewState extends State<SearchView> {
                                   width: screenWidthHalfbyhalf,
                                   color: Colors.blue,
                                   child: Image.asset(
-                                    profilePng,
+                                    listImages[5],
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -161,7 +163,7 @@ class _SearchViewState extends State<SearchView> {
                                   width: screenWidthHalfbyhalf,
                                   color: Colors.amber,
                                   child: Image.asset(
-                                    profilePng,
+                                    listImages[4],
                                     fit: BoxFit.cover,
                                   ),
                                 ),

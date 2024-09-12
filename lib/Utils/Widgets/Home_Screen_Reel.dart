@@ -18,45 +18,43 @@ class _HomeScreenReelState extends State<HomeScreenReel> {
       children: [
         Container(
           height: 1000.h,
-
-          // child: Image.asset(
-          //   widget.img,
-          // ),
           decoration: BoxDecoration(
               color: Colors.green[200],
-              // color: backgroundBlack,
               image: DecorationImage(
                   image: AssetImage(widget.img), fit: BoxFit.cover)),
         ),
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Container(
+        Container(
+          child: Padding(
+            padding: EdgeInsets.only(top: 40.h),
             child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    gradientContainer(height: 200.h, img: widget.img),
+                    gradientContainer(height: 500.h, img: widget.img),
+                    SizedBox(
+                      height: 20.h,
+                    ),
                     Text(
-                      " name ",
+                      " user name ",
                       style: TextStyle(color: Colors.white),
                     ),
                   ],
                 ),
                 IconButton(
-                    onPressed: () {},
-                    icon: Icon(
-                      Icons.more_horiz,
-                      color: Colors.white,
-                    )),
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.more_horiz,
+                    color: Colors.white,
+                  ),
+                ),
               ],
             ),
           ),
-        )
+        ),
       ],
     );
   }
 }
-
-// List name = ["ali", "usman", 'ahmad', 'khuram', "shah"];

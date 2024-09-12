@@ -15,7 +15,6 @@ class _ProfilestackState extends State<Profilestack> {
     return Stack(
       children: [
         Container(
-          // color: Colors.pink,
           height: 300.h,
           width: 300.w,
           child: CircleAvatar(
@@ -24,21 +23,6 @@ class _ProfilestackState extends State<Profilestack> {
             ),
           ),
         ),
-        // Container(
-        //   height: 30.h,
-        //   child: Center(
-        //     child: IconButton(
-        //       onPressed: () {},
-        //       icon: Icon(
-        //         Icons.add,
-        //       ),
-        //     ),
-        //   ),
-        //   decoration: BoxDecoration(
-        //     borderRadius: BorderRadius.circular(20),
-        //     color: Colors.blue,
-        //   ),
-        // ),
         Positioned(
           bottom: 0,
           right: 0,

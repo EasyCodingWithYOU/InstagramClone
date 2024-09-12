@@ -3,6 +3,7 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:insta_clone/Utils/Colors/Colors.dart';
+import 'package:insta_clone/Utils/List_of_Images/List_of_Images.dart';
 import 'package:insta_clone/Utils/Png_Names/Png_Names.dart';
 import 'package:insta_clone/Utils/Widgets/Home_Comment.dart';
 import 'package:insta_clone/Utils/Widgets/Home_Screen_Reel.dart';
@@ -24,6 +25,7 @@ class _HomeViewState extends State<HomeView> {
     //   body: Center(child: Text('home')),
     // );
     return Scaffold(
+      backgroundColor: Colors.black,
       body: SafeArea(
         child: CustomScrollView(
           slivers: [
@@ -71,13 +73,6 @@ class _HomeViewState extends State<HomeView> {
                         ],
                       ),
                     ),
-                    // Container(
-                    //   // height: 400.h,
-                    //   color: Colors.green,
-                    // child: stories(),
-                    // ),
-                    // ==========stroeis
-
                     SizedBox(
                       height: 400.h,
                       child: SingleChildScrollView(
@@ -119,7 +114,7 @@ class _HomeViewState extends State<HomeView> {
                     children: [
                       HomeScreenReel(
                         index: index,
-                        img: profilePng,
+                        img: listImages[index % listImages.length],
                       ),
                       homeComment(),
                     ],
